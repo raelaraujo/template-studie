@@ -1,0 +1,133 @@
+% ============================================================================ %
+
+% \cabecalho{Ciclo}{Matéria}{Páginas/Data}
+\newcommand{\ciclocabecalho}[3]{
+    \vspace*{-0.5cm}
+    \begin{center}
+        {\Large \textbf{#1}}
+    \end{center}
+    \vspace{0.1cm}
+    \begin{center}
+        \large \textbf{#2} \hfill {\large #3}
+    \end{center}
+    \linha
+    \vspace{-0.9cm}
+}
+
+
+% \cabecalho{Matéria}{Dia/Mes}
+\newcommand{\cabecalho}[2]{
+    \begin{center}
+        \large \textbf{#1} \hfill {\large #2}
+    \end{center}
+    \linha
+    \vspace{-0.9cm}
+}
+
+% ============================================================================ %
+
+\newcommand{\limpar}{
+    \clearpage
+}
+
+\newcommand{\linha}{
+    \hrule
+    \vspace{0.5cm}
+}
+
+\newcommand{\minlin}{
+    \vspace{0.3cm}
+    \hline
+    \vspace{0.3cm}
+}
+
+% ============================================================================ %
+
+% \newcommand{\secao}[1]{
+%     \section{#1}
+% }
+%
+% \newcommand{\subsec}[1]{
+%     \subsection{#1}
+% }
+
+% ============================================================================ %
+
+\newcommand{\imp}[1]{
+    \textbf{(!) #1}
+}
+
+\newcommand{\ex}[1]{
+    \textbf{Ex:} #1
+}
+
+\newcommand{\obs}[1]{
+    \textbf{Obs:} #1
+}
+
+% ============================================================================ %
+
+\newcommand{\ii}[1]{
+    \item{#1}
+}
+
+\newcommand{\nii}[1]{
+    \subitem{#1}
+}
+
+\newcommand{\nii}[2]{
+    \item \textbf{#1:} #2
+}
+
+
+\newcommand{\snii}[2]{
+    \subitem \textbf{#1:} #2
+}
+
+\newcommand{\ssnii}[2]{
+    \subsubitem \textbf{#1:} #2
+}
+
+
+
+% ============================================================================ %
+
+\newcommand{\nego}[1]{
+    \textbf{#1}
+}
+
+\newcommand{\ital}[1]{
+    \textit{#1}
+}
+
+\newcommand{\undl}[1]{
+    \underline{#1}
+}
+
+% ============================================================================ %
+
+\newcommand{\bizu}[1]{
+    \noindent\textbf{[BIZU]:} \framebox{\textbf{#1}}
+}
+
+% ============================================================================ %
+
+\newlist{incisos}{enumerate}{1}
+\setlist[incisos,1]{label=\Roman*-- ,left=0.8em,align=left, labelsep=0pt}
+\newcommand{\inciso}[2][]{
+	\if\relax\detokenize{#1}\relax
+		\item #2
+	\else
+		\item[#1 --] #2
+	\fi
+}
+
+\newcommand{\parunico}{
+    \noindent \textbf{Parágrafo único. }
+}
+
+\newcommand{\parag}[1]{
+    \noindent\textbf{§ #1º }
+}
+
+% ============================================================================ %
