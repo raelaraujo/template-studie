@@ -115,7 +115,7 @@
 % ============================================================================ %
 
 \newlist{incisos}{enumerate}{1}
-\setlist[incisos,1]{label=\Roman*-- ,left=0.8em,align=left, labelsep=0pt}
+\setlist[incisos,1]{label=\Roman*\hspace{0.3em}--,left=0.8em,align=left, labelsep=0pt}
 \newcommand{\inciso}[2][]{
 	\if\relax\detokenize{#1}\relax
 		\item #2
